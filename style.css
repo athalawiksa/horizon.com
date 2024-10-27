@@ -1,0 +1,142 @@
+body {
+    background-image: url(asset/cadangan.png), url(asset/cadangan2.png);
+    background-size: contain, cover; 
+    background-position: center, center; 
+    background-repeat: no-repeat, no-repeat; 
+    background-attachment: fixed;
+    margin: 0;  
+    padding: 0;
+}
+.container {
+    display: flex;              
+    align-items: center;        
+    float: left;
+}
+.fp {
+    background-image: url(asset/fotoprofile.png);
+    height: 200px;
+    width: 200px; 
+    background-size: contain;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.slogan {
+    color: #091426;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    flex-direction: column;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+    font-weight: bolder;
+    line-height: 1.5;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 56.25vh;
+    max-width: 100%;
+    height: auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.pengenalan {
+    background-image: url(asset/vector.jpg);
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px; 
+    border-radius: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+.btn{
+    background-color: #e33535; 
+    color: white;
+    width: 350px;  
+    padding-top: 10px;            
+    padding-right: 100px;  
+    padding-bottom: 10px;     
+    border: none;              
+    cursor: pointer;           
+    font-size: 16px;           
+    text-align: center; 
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.btn:hover {
+    background-color: #43bd2b;
+    transform: scale(1.1);
+}
+.btn img {
+    width: 50px;   
+    height: auto;  
+    margin-right: 50px; 
+    margin-left: 10px;
+}
+.textbutton{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+  /* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 150px;
+    background-color: #494545;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    bottom: 115%;
+    left: 157px; /* tadi 50% */
+    margin-left: -60px;
+    /* Fade in tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover, cover; 
+        background-attachment: fixed, fixed;
+    }
+}
+
+
+
+
+
